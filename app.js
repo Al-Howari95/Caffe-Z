@@ -41,7 +41,7 @@ var drink = window.prompt("What is your drink");
 var main = [];
 main.push("theName,gender,hotCold,drink");
 
-for(let i=0;i < main.length;i++)
+for(let i= 0;i < main.length;i++)
 {
    console.log(main[i]);
 }
