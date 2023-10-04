@@ -24,33 +24,33 @@
    //        }
 
 // Function
-var gender;
-var theName = prompt("Enter Your Name :");
-var Age = prompt("Enter Your Age :");
-function g() {
+// var gender;
+// var theName = prompt("Enter Your Name :");
+// var Age = prompt("Enter Your Age :");
+// function g() {
 
 
 
-while(true)
-{
-  gender= prompt("Your Gender  (Male / Female)").toUpperCase()
-//   let check = gender.toLocaleLowerCase();
-   if(gender == "MALE")
-   {
-   alert(`"Welcome Mr ${theName}"`)
-   break;
-   }else if(gender =="FEMALE")
-   {
-      alert(`"Welcome Ms ${theName}"`)
-      break;
-   }
+// while(true)
+// {
+//   gender= prompt("Your Gender  (Male / Female)").toUpperCase()
+// //   let check = gender.toLocaleLowerCase();
+//    if(gender == "MALE")
+//    {
+//    alert(`"Welcome Mr ${theName}"`)
+//    break;
+//    }else if(gender =="FEMALE")
+//    {
+//       alert(`"Welcome Ms ${theName}"`)
+//       break;
+//    }
 
-}
-}
- g();
+// }
+// }
+//  g();
 
 // var hotCold = window.prompt("Do You Want it Hot Or Cold");
-var drink = window.prompt("What is your drink");
+// var drink = window.prompt("What is your drink");
 
 // var main = [];
 // main.push("theName,gender,hotCold,drink");
@@ -128,31 +128,31 @@ var drink = window.prompt("What is your drink");
 //   myElement.id = "Main"
 // DOM
 
-let div = document.getElementById("id")
-let pharagrap = document.createElement("p")
-let unOrder = document.createElement("ul") 
-let list1 = document.createElement("li") 
-let list2 = document.createElement("li")
-let list3 = document.createElement("li")
+// let div = document.getElementById("id")
+// let pharagrap = document.createElement("p")
+// let unOrder = document.createElement("ul") 
+// let list1 = document.createElement("li") 
+// let list2 = document.createElement("li")
+// let list3 = document.createElement("li")
 
 
 
-div.appendChild(pharagrap);
-div.appendChild(unOrder);
-div.appendChild(list1);
-div.appendChild(list2);
-div.appendChild(list3);
-unOrder.appendChild(list1)
-unOrder.appendChild(list2)
-unOrder.appendChild(list3)
+// div.appendChild(pharagrap);
+// div.appendChild(unOrder);
+// div.appendChild(list1);
+// div.appendChild(list2);
+// div.appendChild(list3);
+// unOrder.appendChild(list1)
+// unOrder.appendChild(list2)
+// unOrder.appendChild(list3)
 
 
 
 
-pharagrap.innerHTML=theName
-list1.innerHTML= gender
-list2.innerHTML= Age
-list3.innerHTML = drink
+// pharagrap.innerHTML=theName
+// list1.innerHTML= gender
+// list2.innerHTML= Age
+// list3.innerHTML = drink
 
 
 
@@ -185,3 +185,84 @@ list3.innerHTML = drink
 
 //     userForm.reset();
 // });
+
+// function submit() {
+
+//     const theName = document.getElementById("username").value;
+//     const ages = document.getElementById("age").value;
+//     const drinks = document.getElementById("drinktype").value;
+//     let drink ;
+
+//     if (document.getElementById("dewey").checked  ) {
+//         drink = "cold";
+//     } else if (document.getElementById("huey").checked  ) {
+    
+//         drink = "Hot";
+//     } else {
+//         drink = "invalid select";
+//     }
+
+
+//     let res = document.getElementById("reslt");
+
+//     res.innerHTML = 
+
+//     `<p> name :${theName} </p>
+//     <p> Age : ${ages}<p>
+//     <p>drink type : ${drinks} <p>
+//     <p> drink : ${drink} <p>`;
+
+// }
+
+// Event
+document.getElementById("Form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    const username = document.getElementById("username").value;
+    const age = document.getElementById("age").value;
+        let drink ;
+
+    if (document.getElementById("cold").checked  ) {
+        drink = "cold";
+    } else if (document.getElementById("hot").checked  ) {
+    
+        drink = "Hot";
+    } else {
+        drink = "invalid select";
+    }
+    // const drink= document.querySelector('input[name="Please select your drink:"]:checked').value;
+    const drinkType = document.getElementById("drinkType").value;
+
+    
+    const reslt = document.getElementById("reslt");
+    reslt.innerHTML = `
+        <p>Username: ${username}</p>
+        <p>Age: ${age}</p>
+        <p> drink : ${drink}</p>
+        <p>Drink Type: ${drinkType}</p>
+    `;
+});
+
+
+
+
+
+
+
+
+
+
+
+// let p = document.createElement("name")
+// let ph = document.createElement("age")
+// let pha = document.createElement("drink")
+
+// p.innerHTML = (`${theName}`)
+// ph.innerHTML = (`${ages}`)
+// pha.innerHTML = (`${drinks}`)
+
+
+
+
+
+
