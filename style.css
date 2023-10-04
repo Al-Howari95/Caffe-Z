@@ -1,8 +1,8 @@
 
-h1 {
+/* h1 {
     text-align: center;
     margin-top: 300px;
-}
+} */
 
 /* input {
   display: flex;
@@ -26,3 +26,42 @@ input {
     background-color: aqua;
     border-radius: 14px;
 } */
+
+
+/* #id {
+    background-color: #454544;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+form {
+    padding: 10%;
+    margin-left: 20px;
+} 
+
+input {
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+}
+
+.submit {
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    font-weight: 600;
+    background-color: orange;
+    
+}
+
+label , #ph {
+    color: white;
+}
+
+p {
+    color: black;
+} */
+
